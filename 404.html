@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Omnia AI – Everything starts here</title>
+<style>
+    :root {
+        --bg-dark: #0d0d0d;
+        --bg-light: #ffffff;
+        --text-dark: #ffffff;
+        --text-light: #000000;
+        --accent: #6a4dff;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: var(--bg-dark);
+        color: var(--text-dark);
+        transition: 0.3s;
+    }
+    .light {
+        background: var(--bg-light);
+        color: var(--text-light);
+    }
+    header {
+        padding: 20px;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .hero {
+        padding: 60px 20px;
+        text-align: center;
+    }
+    button {
+        padding: 12px 24px;
+        background: var(--accent);
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    section {
+        padding: 40px 20px;
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.6;
+    }
+    .toggle {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 8px 16px;
+    }
+</style>
+</head>
+
+<body id="page">
+<button class="toggle" onclick="toggleMode()">Dark/Light</button>
+
+<header>Omnia AI</header>
+
+<div class="hero">
+    <h1>Everything starts here.</h1>
+    <p>Your unified execution platform powered by advanced AI engines.</p>
+    <button onclick="document.getElementById('request').scrollIntoView()">Start Now</button>
+    <button onclick="document.getElementById('plans').scrollIntoView()">For Business & Teams</button>
+</div>
+
+<section id="engines">
+    <h2>Omnia AI Engines</h2>
+    <p><strong>1) Core Engine:</strong> Content, business, marketing, analysis.</p>
+    <p><strong>2) Discipline Engine:</strong> Daily question, task, reflection.</p>
+    <p><strong>3) Gold Engine (Aggressive):</strong> Trend, breakouts, TP levels.</p>
+</section>
+
+<section id="request">
+    <h2>Submit Your Request</h2>
+    <p>Send your task and Omnia will handle it.</p>
+</section>
+
+<section id="plans">
+    <h2>Pricing Plans</h2>
+    <p><strong>Starter:</strong> Free – 3 requests</p>
+    <p><strong>Pro:</strong> 39 SAR – 20 requests</p>
+    <p><strong>Business:</strong> 199 SAR – Unlimited + dedicated engines</p>
+</section>
+
+<script>
+function toggleMode() {
+    const body = document.getElementById("page");
+    body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
